@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cha precio</title>
+    <meta name="description" content="Obtener el precio actual de la moneda chaucha">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="/static/images/icons/icon-72x72.png" sizes="72x72">
+    <link href="/static/css/googlefonts.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <link href="/static/css/material.indigo-pink.min.css" rel="stylesheet">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Cha price">
+    <link rel="apple-touch-icon" href="/static/images/icons/icon-152x152.png">
+    <!-- Add to Mosaic Windows -->
+    <meta name="msapplication-TileImage" content="/static/images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#DA532C">
+  </head>
+
+  <body>
+    <h1>Precio</h1>
+    <h2>$ <span id="price"></span></h2>
+    <!-- Colored raised button -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="askPermission()" id="notifications">
+      Recibir notificaciones
+    </button>
+    <script src="/static/js/axios.min.js"></script>
+    <script src="/static/js/material.min.js"></script>
+    <script src="/static/js/sha.js"></script>
+    <script src="/static/js/cha-price.min.js"></script>
+    <script src="/static/js/notifications.js"></script>
+    <script src="/static/js/registration.js"></script>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
